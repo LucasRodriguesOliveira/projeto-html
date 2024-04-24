@@ -1,22 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contato</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header class="white-text padding-10">
-    <h1>Header</h1>
-  </header>
-  <nav class="white-text padding-10">
-    <ul>
-      <li><a href="index.html" class="white-text">Home</a></li>
-      <li><a href="#" class="white-text">Sobre</a></li>
-      <li><a href="#" class="white-text">Serviços</a></li>
-      <li><a href="contact.html" class="white-text">Contato</a></li>
-    </ul>
-  </nav>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contato</title>
+    <link rel="stylesheet" href="contact-style.css" />
+  </head>
+  <body>
+    <header class="white-text padding-10">
+      <h1>Header</h1>
+    </header>
+    <nav class="white-text padding-10">
+      <ul>
+        <li><a href="index.html" class="white-text">Home</a></li>
+        <li><a href="#" class="white-text">Sobre</a></li>
+        <li><a href="#" class="white-text">Serviços</a></li>
+        <li><a href="contact.html" class="white-text">Contato</a></li>
+      </ul>
+    </nav>
+    <main>
+      <form>
+        <label for="name">Nome Completo</label>
+        <input type="text" name="name" id="name" />
+        <label for="name">E-mail</label>
+        <input type="email" name="email" id="email" />
+        <label for="phone">Número para contato</label>
+        <input type="tel" name="phone" id="phone" />
+        <label for="message">Deixe aqui sua mensagem</label>
+        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+        <label>Como prefere nosso contato?</label>
+        <input type="radio" name="contact" id="contact1" value="email" />
+        <label for="contact1">E-mail</label>
+        <input type="radio" name="contact" id="contact2" value="phone" />
+        <label for="contact2">Telefone</label>
+        <input type="radio" name="contact" id="contact3" value="whatsapp" />
+        <label for="contact3">Whatsapp</label>
+        <label for="pref">Em qual horário prefere ser atendido?</label>
+        <select name="pref" id="pref">
+          <option value="manha">Matutino</option>
+          <option value="tarde">Vespertino</option>
+          <option value="noite">Noturno</option>
+        </select>
+        <label for="newsletter">Gostaria de receber nossas novidades por e-mail?</label>
+        <input type="checkbox" name="newsletter" id="newsletter" />
+        <input type="submit" value="Enviar formulário" />
+      </form>
+    </main>
+  </body>
 </html>
