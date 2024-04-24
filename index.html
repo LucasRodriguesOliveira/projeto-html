@@ -1,89 +1,132 @@
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Exemplo de Tag Aside</title>
-    <style>
-
-        nav {
-            background-color: #444;
-            color: #fff;
-            padding: 10px;
-            text-align: center;
-        }
-        nav ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-        }
-        nav ul li {
-            display: inline;
-            margin-right: 20px;
-        }
-        nav ul li a {
-            color: #fff;
-            text-decoration: none;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        header, footer {
-            background-color: #333;
-            color: #fff;
-            padding: 10px;
-        }
-        main, aside {
-            display: inline-block;
-            vertical-align: top;
-            width: 45%;
-            padding: 20px;
-        }
-        main {
-            background-color: #f0f0f0;
-        }
-        aside {
-            background-color: #e0e0e0;
-        }
-        @media only screen and (max-width: 600px) {
-            main, aside {
-                display: block;
-                width: 100%;
-            }
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <h1>Header</h1>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header class="white-text padding-10">
+      <h1>Header</h1>
     </header>
-    <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Sobre</a></li>
-            <li><a href="#">Serviços</a></li>
-            <li><a href="#">Contato</a></li>
-        </ul>
+    <nav class="white-text padding-10">
+      <ul>
+        <li><a href="index.html" class="white-text">Home</a></li>
+        <li><a href="#" class="white-text">Sobre</a></li>
+        <li><a href="#" class="white-text">Serviços</a></li>
+        <li><a href="contact.html" class="white-text">Contato</a></li>
+      </ul>
     </nav>
     <main>
-        <h2>Main Content</h2>
-        <p>This is the main content of the page.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut a erat fermentum, hendrerit tellus ac, accumsan arcu. Quisque faucibus mauris a interdum fermentum. Aenean justo lacus, venenatis id fringilla quis, iaculis quis orci. Donec magna risus, tincidunt eget tempor vitae, rutrum sed orci. Ut gravida, ante at placerat mollis, odio magna tincidunt nulla, at suscipit lacus dolor eu lorem. Sed vulputate sagittis justo, id ornare eros rutrum ac. Proin quis lectus vitae nisl aliquam posuere ac eu magna. Duis lobortis mattis lacinia. Cras aliquam in justo a vulputate. Vestibulum tristique consectetur elit at pulvinar. Suspendisse ipsum felis, feugiat non viverra vitae, tincidunt sit amet nulla. Sed egestas maximus nunc, in finibus quam ultrices mattis. Fusce viverra nisl sit amet fermentum laoreet. Nunc fermentum neque justo, sit amet sodales magna congue non.
-
-            Morbi tincidunt turpis eget ante scelerisque, sed fringilla dolor rhoncus. Curabitur tincidunt orci leo, et venenatis nunc scelerisque nec. Aenean id augue massa. Nulla nisi magna, venenatis eget nisl vestibulum, aliquam interdum ante. Sed mollis auctor erat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque quis sollicitudin massa. Sed vel ligula vitae est dignissim cursus. Nullam vitae pretium metus. Donec cursus, dolor sed rhoncus rhoncus, nibh diam hendrerit urna, non eleifend nisi mi et nunc. Curabitur pretium, quam vitae egestas rutrum, nulla mauris iaculis metus, venenatis faucibus nisl metus sit amet odio. Praesent tristique erat vel sollicitudin posuere. Aliquam sagittis lacus a ullamcorper luctus.</p>
+      <h2>Main Content</h2>
+      <p>Espaço reservado para um artigo no conteúdo principal.</p>
+      <section class="padding-10">
+        <div class="slide-container">
+          <input type="radio" name="slide" id="slide1" checked />
+          <input type="radio" name="slide" id="slide2" />
+          <input type="radio" name="slide" id="slide3" />
+          <input type="radio" name="slide" id="slide4" />
+          <div class="slide-image-container">
+            <div class="slide-image">
+              <h6 class="slide-number">1 / 4</h6>
+              <img
+                src="https://picsum.photos/id/123/700/350"
+                alt="slide item"
+                class="slide-item"
+              />
+            </div>
+            <div class="slide-image">
+              <h6 class="slide-number">2 / 4</h6>
+              <img
+                src="https://picsum.photos/id/126/700/350"
+                alt="slide item"
+                class="slide-item"
+              />
+            </div>
+            <div class="slide-image">
+              <h6 class="slide-number">3 / 4</h6>
+              <img
+                src="https://picsum.photos/id/129/700/350"
+                alt="slide item"
+                class="slide-item"
+              />
+            </div>
+            <div class="slide-image">
+              <h6 class="slide-number">4 / 4</h6>
+              <img
+                src="https://picsum.photos/id/132/700/350"
+                alt="slide item"
+                class="slide-item"
+              />
+            </div>
+          </div>
+          <div class="slide-caption">
+            <p id="caption"></p>
+          </div>
+          <div class="slide-image-list">
+            <div class="slide-list-item">
+              <label for="slide1">
+              <img
+                src="https://picsum.photos/id/123/700/350"
+                alt="slide item"
+                class="slide-item"
+              />
+              </label>
+            </div>
+            <div class="slide-list-item">
+              <label for="slide2">
+              <img
+                src="https://picsum.photos/id/126/700/350"
+                alt="slide item"
+                class="slide-item"
+              />
+              </label>
+            </div>
+            <div class="slide-list-item">
+              <label for="slide3">
+              <img
+                src="https://picsum.photos/id/129/700/350"
+                alt="slide item"
+                class="slide-item"
+              />
+              </label>
+            </div>
+            <div class="slide-list-item">
+              <label for="slide4">
+              <img
+                src="https://picsum.photos/id/132/700/350"
+                alt="slide item"
+                class="slide-item"
+              />
+              </label>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr />
+      <section class="padding-10">
+        <h3>Section 2</h3>
+        <p>Espaço reservado para seção 2</p>
+      </section>
     </main>
     <aside>
-        <h2>Aside Content</h2>
-        <p>This is the aside content of the page.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut a erat fermentum, hendrerit tellus ac, accumsan arcu. Quisque faucibus mauris a interdum fermentum. Aenean justo lacus, venenatis id fringilla quis, iaculis quis orci. Donec magna risus, tincidunt eget tempor vitae, rutrum sed orci. Ut gravida, ante at placerat mollis, odio magna tincidunt nulla, at suscipit lacus dolor eu lorem. Sed vulputate sagittis justo, id ornare eros rutrum ac. Proin quis lectus vitae nisl aliquam posuere ac eu magna. Duis lobortis mattis lacinia. Cras aliquam in justo a vulputate. Vestibulum tristique consectetur elit at pulvinar. Suspendisse ipsum felis, feugiat non viverra vitae, tincidunt sit amet nulla. Sed egestas maximus nunc, in finibus quam ultrices mattis. Fusce viverra nisl sit amet fermentum laoreet. Nunc fermentum neque justo, sit amet sodales magna congue non.
-
-            Morbi tincidunt turpis eget ante scelerisque, sed fringilla dolor rhoncus. Curabitur tincidunt orci leo, et venenatis nunc scelerisque nec. Aenean id augue massa. Nulla nisi magna, venenatis eget nisl vestibulum, aliquam interdum ante. Sed mollis auctor erat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque quis sollicitudin massa. Sed vel ligula vitae est dignissim cursus. Nullam vitae pretium metus. Donec cursus, dolor sed rhoncus rhoncus, nibh diam hendrerit urna, non eleifend nisi mi et nunc. Curabitur pretium, quam vitae egestas rutrum, nulla mauris iaculis metus, venenatis faucibus nisl metus sit amet odio. Praesent tristique erat vel sollicitudin posuere. Aliquam sagittis lacus a ullamcorper luctus.</p>
+      <h2>Tópicos</h2>
+      <ul>
+        <li><a href="#">Tópico 1</a></li>
+        <li><a href="#">Tópico 2</a></li>
+        <li><a href="#">Tópico 3</a></li>
+      </ul>
+      <h2>Links Importantes</h2>
+      <ul>
+        <li><a href="#">Google</a></li>
+        <li><a href="#">Github</a></li>
+        <li><a href="#">Linkedin</a></li>
+      </ul>
     </aside>
-    <footer>
-        <h2>Footer</h2>
-        <p>This is the footer of the page.</p>
+    <footer class="white-text padding-10">
+      <h2>Footer</h2>
+      <p>This is the footer of the page.</p>
     </footer>
-</body>
+    <script  src="./main.js"></script>
+  </body>
 </html>
